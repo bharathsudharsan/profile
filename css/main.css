@@ -345,3 +345,22 @@ a.link {
     /* text-decoration: underline !important; */
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .timeline > li .left-time {
+    width: 50%;
+  }
+
+  ul.timeline > li div.user-time:before {
+    left: -29px;
+   }
+
+  ul.timeline > li div.user-time {
+    margin: 0 0 0px 130px;
+    text-align: unset;
+  }
+ 
+ ul.timeline:before {
+    left: 150px;
+ }
+}
