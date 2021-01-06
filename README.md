@@ -1,3 +1,2 @@
-This is my personal website, made completly using html.
-Feel free to fork or re-use the code.
+This is my personal website designed completly using html. Feel free to fork or re-use the code.
 Thanks.
