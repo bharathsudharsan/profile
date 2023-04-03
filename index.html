@@ -306,8 +306,8 @@ data @ International Conference on Advanced Computing &amp; Communication System
 Products Research and development (R&D) experience:
 <ul class="event-list">
 
-<li> Design scalable AI/ML and statistical learning applications in Ray - usage of autoscaler, task management, handling out-of-memory, failure model, actors, gRPC, protocol buffers, Pulsar IO connectors, etc. </li>
-<li> Design advanced multithreading task players: (i) Lightweight mini-batches/timeslices based big data retrieval using ELK SQL Query, Pagingnation, Scroll; (ii) Convert features and metadata from Dict to Proto data structure; (iii) Thread-safe performance monitors - messages sent, elapsed time, throughput rate; (iv) Efficient k8 node/pod assigning and scaling for data/task playback from each USA state.</li>
+<li> Design scalable AI/ML and statistical learning applications in Python Ray - usage of autoscaler, task management, handling out-of-memory, failure model, actors, gRPC, protocol buffers, Pulsar IO connectors, etc. </li>
+<li> Design advanced multithreading task players: (i) Lightweight mini-batches/timeslices based big data retrieval using kibana query language (KQL) Query, Pagingnation, point in time (PIT), Scroll; (ii) Convert features and metadata from Dict to Proto data structure; (iii) Thread-safe performance monitors - messages sent, elapsed time, throughput rate; (iv) Efficient k8 node/pod assigning and scaling for data/task playback from each USA state.</li>
 <li> Compute statistical features for ML from vehicle telemetry data streams - kurtosis, 85th percentile speed, standard distance, etc.</li>
 <li> Create industry-grade novel AI/ML algorithms - usage of TensorFlow, Keras, Pytorch, scikit-learn.</li>
 <li> Design Online Mahalanobis Distance (OMD) algorithm for real-time road anomaly detection using vehicle telemetry data streams.</li>
@@ -317,12 +317,12 @@ Products Research and development (R&D) experience:
 <li> Monitoring and management of cluster deployed artifacts and apps - usage of Ingress, Lens, Kamon, Prometheus, Grafana, MLflow, Redis, Beats.</li>
 <li> OpenStreetMap (OSM) based map matching & enrichment - usage of OSMnx, PyOsmium, osm-roads, OSRM - usage of osm, pbf, hdf5 files.</li>
 <li> Custom visualization in jupyter notebooks - usage of mplcursors, plotly, cufflinks, iplot.</li>
-<li> Efficient big data retrieval from elasticsearch indices. Usage of: pagination, point in time (PIT), sliced scroll with multiprocessing, kibana query language (KQL), Eland Python Client (for complex queries & aggregations), Elasticsearch DSL.</li> 
+<li> Efficient big data enrichment for ML - jobs at 50+ million records scale. Example job: Chunk by chunk pull Postgres table rows -> Geo.LineString processing & enrichment -> writing rows to ELK: Usage of helpers.streaming_bulk, psycopg2, kibana query language (KQL), Eland Python Client (for complex queries & aggregations), Elasticsearch DSL; Usage of concurrent.futures, ThreadPoolExecutor, future queues; live chunk-by-chunk copied data validation, multi-stage exceptions handling & retrying; ELK index template / pattern / management, stack monitoring.</li> 
 <li> Enable deployed apps to read/write dynamic configs/files in shared storage - usage of AWS SDK (Boto3), PersistentVolumeClaim (PVC).</li>
 <li> Data Processing - usage of epoch, RegEx, lambda function, nested dictionary, lists, dictionarified lists, key-value pairs, pandas, numpy, polygeohasher, geopandas.</li>
 <li> Data Analysis - exploratory data analysis (EDA), principal component analysis (PCA), pandas-profiling, D-Tale, UMAP, t-SNE.</li>
 <li>ML software profiling and stress testing - setting custom metrics, analysis under idle mode, normal data flow, worst case scenarios - usage of cProfile, psutil, VizTracer.</li>
-<li> Architecture Review Board (ARB) presentations: Statement of Technical Direction (SOTD); System benchamrks (run for weeks) to record CPU/Mem resource quota usage by namespace, Avg network usage by namespace, CPU/Mem stats for namespace, CPU usage/throttling by distinct pod, Mem usage by distinct pod, Avg CPU/Mem by container type, Container CPU/Mem stats in namespace; System Topologically Associating Domain (TAD) diagram; Current and future production resource estimation (min, max, avg) to serve vehicles from each Geohash 5 in USA.</li>
+<li> Architecture Review Board (ARB) presentations: Statement of Technical Direction (SOTD); System benchmarks (run for weeks) to record CPU/Mem resource quota usage by namespace, Avg network usage by namespace, CPU/Mem stats for namespace, CPU usage/throttling by distinct pod, Mem usage by distinct pod, Avg CPU/Mem by container type, Container CPU/Mem stats in namespace; System Topologically Associating Domain (TAD) diagram; Current and future production resource estimation (min, max, avg) to serve vehicles from each Geohash 5 in USA.</li>
 <li> Representing team for Data Loss Prevention (DLP) reviews.</li>
 <li> Develop JavaScript-based custom UI for product demos & POCs - usage of mapbox GL JS, kepler, map vector tiles, turf, shapely, py-geohash.</li>
 <li> Usage of cryptography fernet, logging, garbage collector interface.</li>
